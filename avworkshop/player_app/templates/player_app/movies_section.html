@@ -1,0 +1,36 @@
+<!-- Movie section template -->
+
+<div class="card-section">
+
+    <div class="card-list scrollbar-style">
+
+        <ul class="list-inline">
+
+            <div class="heading-card-item">
+                <h3>{{ title }}</h3>
+            </div>
+
+            {% for movie in movies %}
+
+            <li class="card-item">
+                <a href="{% url 'player' %}?id={{movie.imdb_id}}">
+
+                    <div class="card card-inverse">
+
+                        <!-- Movie poster -->
+                        <img class="card-img" src="{{ movie.image_url }}" alt="{{ movie.title }}">
+
+                        <!-- Overlay styling  -->
+                        <div class="card-img-overlay"></div>
+                    </div>
+                    
+                </a>
+            </li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+</div>

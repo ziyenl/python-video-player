@@ -1,0 +1,20 @@
+<!-- App wide includes -->
+{% include "player_app/page_includes.html" %}
+
+<!-- Page container  -->
+<div class="container-fluid">
+
+    <!-- Header -->
+    {% include "player_app/header.html" with app_name=app_name only %}
+
+    <!-- Movie sections -->
+    {% for section in sections %}
+
+        {% include "player_app/movies_section.html" with movies=section.movies title=section.title only %}
+
+    {% endfor %}
+
+    <!-- Footer -->
+    {% include "player_app/footer.html" with footer_text=footer_text only %}
+
+</div>

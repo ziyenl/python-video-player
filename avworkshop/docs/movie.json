@@ -1,0 +1,29 @@
+{
+  'tconst': 'tt0386676',
+  'type': 'tv_series',
+  'title': 'The Office',
+  'principals': [
+    {
+      'nconst': 'nm0136797',
+      'name': 'Steve Carell'
+    },
+    {
+      'nconst': 'nm0278979',
+      'name': 'Jenna Fischer'
+    },
+    {
+      'nconst': 'nm1024677',
+      'name': 'John Krasinski'
+    },
+    {
+      'nconst': 'nm0933988',
+      'name': 'Rainn Wilson'
+    }
+  ],
+  'image': {
+    'width': 1508,
+    'url': 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzNjAzMDE0NF5BMl5BanBnXkFtZTcwNTEyMzM3OA@@._V1_.jpg',
+    'height': 2048
+  },
+  'year': '2005'
+}

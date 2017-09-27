@@ -1,0 +1,25 @@
+<!-- Page includes template. Loads all includes which are needed on every page -->
+
+<!-- Load bootstrap django -->
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<!-- Load bootstrap styles and scripts -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Static app files -->
+{% load static %}
+
+<!-- Static app css -->
+<link rel="stylesheet" type="text/css" href="{% static 'player_app/style.css' %}" />
+
+<!-- Dash includes -->
+<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>

@@ -1,0 +1,5 @@
+Django==1.11.5
+django-bootstrap3==9.0.0
+imdbpie==4.3.0
+pdb==0.1
+simplejson==3.11.1

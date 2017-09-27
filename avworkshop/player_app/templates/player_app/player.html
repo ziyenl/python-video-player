@@ -1,0 +1,51 @@
+<!-- App wide includes -->
+{% include "player_app/page_includes.html" %}
+
+<!-- Page container  -->
+<div class="container-fluid">
+
+    <!-- Header -->
+    {% include "player_app/header.html" with app_name=app_name only %}
+
+    <div>
+        <div class="row justify-content-md-center">
+
+            <!-- Video details -->
+            <div class="col col-lg-4">
+
+                <div class="row">
+                    <h2> {{ movie.title }} ({{ movie.year }})</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col col-lg-2">
+                        <img class="player-img" src="{{movie.image_url}}"></img>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col col-lg-6 player">
+				<video controls autoplay width="480" data-dashjs-player>
+					<source src="{{movie.trailer_url}}" type="video/mp4">
+				</video>
+				<!--video data-dashjs-player autoplay width="480" src="http://amssamples.streaming.mediaservices.windows.net/683f7e47-bd83-4427-b0a3-26a6c4547782/BigBuckBunny.ism/manifest(format=mpd-time-csf)" controls>
+				</video-->
+                <!-- Video player 
+                    Place the video player here.
+                    Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+
+                    You can call the movie object's trailer url as follows:
+                    {{movie.trailer_url}}
+                -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {% include "player_app/footer.html" with footer_text=footer_text only %}
+
+</div>
